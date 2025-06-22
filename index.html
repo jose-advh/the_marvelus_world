@@ -16,15 +16,19 @@
           class="logotipo-header"
         />
 
-        <ul class="lista_navegador-header">
+        <button class="boton-menu-header" id="toggle-menu">&#9776;</button>
+
+        <ul class="lista_navegador-header" id="lista-navegacion">
           <li><a href="#" class="enlace-header">Cosas para Hacer</a></li>
           <li><a href="#" class="enlace-header">Dónde Hospedarse</a></li>
           <li><a href="#" class="enlace-header">Ofertas y Paquetes</a></li>
           <li><a href="#" class="enlace-header">Sobre Nosotros</a></li>
         </ul>
       </nav>
+
       <a href="#" class="enlace-header button-header">Zarpar Ahora</a>
     </header>
+
     <main>
       <section class="introduccion-main separacion">
         <h1 class="titulo_introduccion-main">
@@ -32,11 +36,12 @@
           The Marvelus Isles
         </h1>
       </section>
-      <section class="ofertas-main">
+
+      <section class="ofertas-main separacion">
         <h2 class="ofertas_titulo separacion">Ahorra con Ofertas Especiales</h2>
         <article class="ofertas_especiales-main">
           <section class="oferta_especial-contenedor">
-            <article class="oferta_descripcion-main">
+            <article class="oferta_descripcion-main order-2">
               <h3 class="oferta_subtitulo">
                 ¡Ahorra hasta 20% en Habitaciones seleccionadas durante Junio!
               </h3>
@@ -76,7 +81,66 @@
           </section>
         </article>
       </section>
+
+      <section class="seccion-ofertas">
+        <h2 class="titulo-seccion">¿Qué ofrece The Marvelus Isles?</h2>
+
+        <div class="contenedor-cards-oferta">
+          <article class="card-oferta">
+            <img
+              src="media/fotos/paisaje_isla.jpg"
+              alt="Experiencia única"
+              class="img-card-oferta"
+            />
+            <h3 class="titulo-card">Experiencia Única</h3>
+            <p class="texto-card">
+              Sumérgete en un mundo lleno de magia, cultura y paisajes
+              inolvidables. Marvelus te conecta con lo esencial.
+            </p>
+          </article>
+
+          <article class="card-oferta">
+            <img
+              src="media/fotos/sendero_selva.jpg"
+              alt="Aventura Natural"
+              class="img-card-oferta"
+            />
+            <h3 class="titulo-card">Aventura Natural</h3>
+            <p class="texto-card">
+              Recorre senderos selváticos, cascadas escondidas y playas vírgenes
+              en una experiencia salvaje y segura.
+            </p>
+          </article>
+
+          <article class="card-oferta">
+            <img
+              src="media/fotos/cabaña_rustica.jpg"
+              alt="Hospedaje con encanto"
+              class="img-card-oferta"
+            />
+            <h3 class="titulo-card">Hospedaje con Encanto</h3>
+            <p class="texto-card">
+              Desde cabañas rústicas hasta villas frente al mar, elige cómo
+              vivir tu estadía en las islas.
+            </p>
+          </article>
+
+          <article class="card-oferta">
+            <img
+              src="media/fotos/festivales.jpg"
+              alt="Cultura viva"
+              class="img-card-oferta"
+            />
+            <h3 class="titulo-card">Cultura Viva</h3>
+            <p class="texto-card">
+              Disfruta de festivales, gastronomía local y leyendas vivas
+              contadas por los isleños más sabios.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
