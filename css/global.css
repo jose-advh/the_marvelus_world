@@ -1,0 +1,148 @@
+/* ==== VARIABLES GENERALES ==== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+:root {
+  --color-principal: #00b8d4;
+  --color-secundario: #ff6f61;
+  --color-fondo-claro: #faf9f6;
+  --color-fondo-oscuro: #102a43;
+  --color-detalle: #4caf50;
+  --color-texto-principal: #2e3a59;
+
+  --fuente-principal: "Poppins", sans-serif;
+}
+
+/* ==== RESET GENERAL ==== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--fuente-principal, sans-serif);
+  background-color: var(--color-fondo-claro, #ffffff);
+  color: var(--color-texto-principal, #000000);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ==== HEADER GENERAL ==== */
+
+header {
+  width: 100%;
+  padding: 0.5rem;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+}
+
+.logotipo-header {
+  width: 8%;
+}
+
+.navegador-header {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lista_navegador-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.button-header {
+  padding: 0.6rem 1.5rem;
+  background-color: var(--color-detalle);
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: 0.2s ease;
+}
+
+.enlace-header:hover {
+  color: black;
+}
+
+.button-header:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-detalle);
+}
+
+/* ==== MAIN GENERAL ==== */
+
+main {
+  padding-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.separacion {
+  margin-bottom: 50px;
+}
+
+.boton-principal {
+  width: 18rem;
+  padding: 0.8rem;
+  border-radius: 15px;
+  background-color: blue;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}

@@ -1,0 +1,68 @@
+:root {
+  --color-principal: #00b8d4;
+  --color-secundario: #ff6f61;
+  --color-fondo-claro: #faf9f6;
+  --color-fondo-oscuro: #102a43;
+  --color-detalle: #4caf50;
+  --color-texto-principal: #2e3a59;
+
+  --fuente-principal: "Poppins", sans-serif;
+}
+
+.introduccion-main {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(../media/imagenes/archipielago_islas.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo_introduccion-main {
+  color: rgb(76, 255, 130);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.ofertas_especiales-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.ofertas_titulo {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.oferta_especial-contenedor {
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.oferta_descripcion-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ofertas_especiales-img {
+  width: 60%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.oferta_subtitulo {
+  font-size: 1.7rem;
+}
