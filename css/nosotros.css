@@ -1,0 +1,99 @@
+:root {
+  --color-principal: #00b8d4;
+  --color-secundario: #ff6f61;
+  --color-fondo-claro: #faf9f6;
+  --color-fondo-oscuro: #102a43;
+  --color-detalle: #4caf50;
+  --color-texto-principal: #2e3a59;
+
+  --fuente-principal: "Poppins", sans-serif;
+}
+
+.introduccion-nosotros {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-fondo-oscuro);
+}
+
+.titulo-nosotros {
+  font-size: 3rem;
+  text-align: center;
+  color: wheat;
+}
+
+.logo-nosotros {
+  width: 25%;
+}
+
+.contenido-nosotros {
+  height: fit-content;
+}
+
+.contenido_texto-nosotros {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contenido_descubre-nosotros {
+  height: 100vh;
+}
+
+.sitios-imperdibles {
+  padding: 3rem 1rem;
+  background-color: var(--color-fondo-claro);
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--color-texto-principal);
+}
+
+.contenedor-cards-sitios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-sitio {
+  background-color: white;
+  width: 250px;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card-sitio:hover {
+  transform: translateY(-5px);
+}
+
+.imagen-sitio {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.titulo-card-sitio {
+  font-size: 1.2rem;
+  color: var(--color-principal);
+}
+
+@media (max-width: 768px) {
+  .introduccion-nosotros {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

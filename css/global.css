@@ -114,6 +114,10 @@ header {
   transition: 0.2s ease;
 }
 
+.enlace-header {
+  font-size: 0.9rem;
+}
+
 .enlace-header:hover {
   color: black;
 }
@@ -179,8 +183,21 @@ main {
   justify-content: center;
 }
 
+.letra-capital {
+  float: left;
+  font-size: 4.2rem;
+  line-height: 1;
+  padding-right: 8px;
+  color: var(--color-principal);
+  font-weight: bold;
+}
+
 .separacion {
   margin-bottom: 70px;
+}
+
+.black {
+  color: black;
 }
 
 .boton-principal {
