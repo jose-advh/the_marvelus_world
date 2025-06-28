@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+:root {
+  --color-principal: #00b8d4;
+  --color-secundario: #ff6f61;
+  --color-fondo-claro: #faf9f6;
+  --color-fondo-oscuro: #102a43;
+  --color-detalle: #4caf50;
+  --color-texto-principal: #2e3a59;
+
+  --fuente-principal: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  color: var(--color-texto-principal);
+}
+.oferta__encabezado {
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  padding-top: 8%;
+}
+
+.oferta__titulo-principal {
+  font-size: 2rem;
+  color: var(--color-principal);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.oferta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  padding-bottom: 8%;
+}
+
+.oferta__fila {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.oferta__tarjeta {
+  width: 320px;
+  padding: 1.5rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  background-color: var(--color-principal);
+}
+
+.oferta__tarjeta--izquierda {
+  transform: rotate(2deg);
+}
+
+.oferta__tarjeta--centro {
+  transform: rotate(-1deg);
+}
+
+.oferta__tarjeta--derecha {
+  transform: rotate(3deg);
+}
+
+.oferta__fila--invertida .oferta__tarjeta--izquierda {
+  transform: rotate(-3deg);
+}
+
+.oferta__fila--invertida .oferta__tarjeta--centro {
+  transform: rotate(1deg);
+}
+
+.oferta__fila--invertida .oferta__tarjeta--derecha {
+  transform: rotate(-3deg);
+}
+
+.oferta__etiqueta {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-detalle);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  border-radius: 60% / 100%; 
+  z-index: 1;
+}
+
+.oferta__titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.oferta__precio {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.oferta__dias {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.oferta__detalle {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.oferta__boton {
+  background-color: var(--color-secundario);
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #222;
+  transition: transform 0.2s ease;
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 26%;
+}
+
+.oferta__boton:hover {
+  transform: scale(1.05);
+}
+
+.oferta__toggle-icon {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.oferta__detalles::-webkit-scrollbar {
+  width: 8px;
+}
+
+.oferta__detalles::-webkit-scrollbar-track {
+  background: #ffcfc9;
+  border-radius: 4px;
+}
+
+.oferta__detalles::-webkit-scrollbar-thumb {
+  background-color: #b44138; 
+  border-radius: 4px;
+  border: 2px solid #ffcfc9;
+}
+
+.oferta__detalles {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--color-secundario);
+  color: #fff;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  display: none;
+  max-height: 250px;
+  overflow-y: auto;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.oferta__descripcion {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--color-fondo-claro);
+}
+
+.oferta__accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.oferta__item {
+  border-top: 1px solid #fff;
+  padding-top: 0.5rem;
+}
+
+.oferta__item-header {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.oferta__item-body {
+  display: none;
+  margin-top: 0.3rem;
+  color: #fff;
+}
+
+.oferta__icon {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+.oferta__encabezado{
+    padding-top: 25%;
+} 
+  .oferta__fila {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oferta__tarjeta {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .oferta__titulo,
+  .oferta__precio,
+  .oferta__dias,
+  .oferta__detalle {
+    text-align: center;
+  }
+
+  .oferta__boton {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .oferta__accordion {
+    padding: 0.5rem;
+  }
+
+  .oferta__item-header {
+    font-size: 1.1rem;
+    padding: 0.75rem;
+  }
+
+  .oferta__item-body {
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+}
+

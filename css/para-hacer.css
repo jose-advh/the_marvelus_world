@@ -1,0 +1,513 @@
+:root {
+    --color-principal: #00b8d4;
+    --color-secundario: #ff6f61;
+    --color-fondo-claro: #faf9f6;
+    --color-texto-principal: #2e3a59;
+    --fuente-principal: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo-claro);
+    color: var(--color-texto-principal);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('../media/sitios/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero__contenido {
+    position: relative;
+    z-index: 1;
+}
+
+.hero__titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-secundario);
+}
+
+.hero__subtitulo {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.intro {
+    padding: 2rem 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 1.5rem auto 1rem;
+}
+
+.intro__titulo {
+    font-size: 1.8rem;
+    color: var(--color-texto-principal);
+    margin-bottom: 1rem;
+}
+
+.intro__parrafo {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.maravillas {
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.maravillas__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-texto-principal);
+    margin-bottom: 2rem;
+}
+
+.maravillas__contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+}
+
+.maravillas__flecha {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-secundario);
+    z-index: 2;
+}
+
+.maravillas__carrusel {
+    display: flex;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 1rem;
+}
+
+.maravillas__lista {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.maravillas__tarjeta {
+    position: relative;
+    width: 315px;
+    margin: 0 10px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    transition: box-shadow 0.3s;
+}
+
+.maravillas__tarjeta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.maravillas__frase {
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-texto-principal);
+}
+
+.maravillas__velo {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 184, 212, 0.92);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    transition: top 0.5s ease;
+}
+
+.maravillas__tarjeta:hover .maravillas__velo {
+    top: 0;
+}
+
+.maravillas__velo h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.maravillas__velo p {
+    font-size: 0.85rem;
+}
+
+.maravillas__indicadores {
+    margin-top: 1rem;
+}
+
+.maravillas__punto {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.maravillas__punto--activo {
+    background-color: var(--color-secundario);
+}
+
+.cultura {
+    background-color: var(--color-fondo-claro);
+}
+
+.cultura__titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-texto-principal);
+    margin-bottom: 2.5rem;
+}
+
+.cultura__bloque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.cultura__bloque--inverso {
+    flex-direction: row-reverse;
+}
+
+.cultura__imagen {
+    flex: 1;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.cultura__contenido {
+    flex: 1;
+    padding: 2rem;
+    text-align: left;
+}
+
+.cultura__subtitulo {
+    font-size: 1.5rem;
+    color: var(--color-principal);
+    margin-bottom: 1rem;
+}
+
+.cultura__texto {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-texto-principal);
+}
+
+.actividades {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.actividades__titulo {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-texto-principal);
+}
+
+.actividades__contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+}
+
+.actividades__flecha {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-secundario);
+    z-index: 2;
+}
+
+.actividades__carrusel {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 1rem;
+    display: flex;
+}
+
+.actividades__lista {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.actividades__tarjeta {
+    width: 315px;
+    margin: 0 10px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.actividades__tarjeta img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+}
+
+.actividades__tarjeta p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.actividades__tarjeta h4 {
+    color: var(--color-secundario);
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.actividades__indicadores {
+    margin-top: 1rem;
+}
+
+.actividades__indicadores span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.actividades__indicadores .activo {
+    background-color: var(--color-secundario);
+}
+
+.mercado {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    margin-bottom: 30px;
+}
+
+.mercado__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-texto-principal, #333);
+}
+
+.mercado__tarjeta {
+    background: #f9f9f9;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mercado__imagen {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+}
+
+.mercado__texto {
+    padding: 1.5rem;
+    max-height: 250px;
+    overflow-y: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    font-style: italic;
+    border-top: 1px solid #eee;
+}
+
+.mercado__texto::-webkit-scrollbar {
+    width: 6px;
+}
+
+.mercado__texto::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .maravillas__contenedor {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .maravillas__carrusel {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .maravillas__lista {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .maravillas__tarjeta {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .maravillas__tarjeta img {
+        width: 100%;
+        height: 70%;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .maravillas__frase {
+        font-size: 1rem;
+        padding: 1rem;
+        color: var(--color-texto-principal);
+        background-color: white;
+    }
+
+    .maravillas__velo {
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 184, 212, 0.9);
+        color: white;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 0.5s ease;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .maravillas__tarjeta:hover .maravillas__velo {
+        top: 0;
+    }
+
+    .maravillas__flecha {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: var(--color-secundario);
+        cursor: pointer;
+        z-index: 10;
+        margin: 0 8px;
+    }
+
+    .maravillas__indicadores {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 1rem;
+    }
+
+    .maravillas__punto {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+    }
+
+    .maravillas__punto--activo {
+        background-color: var(--color-secundario);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .cultura__bloque,
+    .cultura__bloque--inverso {
+        flex-direction: column;
+    }
+
+    .cultura__imagen {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cultura__contenido {
+        text-align: center;
+        padding: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .actividades__tarjeta {
+        width: 100%;
+        margin: 0;
+    }
+
+    .actividades__tarjeta img {
+        margin-left: 20px;
+    }
+
+    .actividades__lista {
+        width: 100%;
+    }
+
+    .actividades__carrusel {
+        margin: 0;
+    }
+}

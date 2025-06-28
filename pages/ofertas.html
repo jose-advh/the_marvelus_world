@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Marvelus World - Ofertas</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/ofertas.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navegador-header">
+        <img
+          src="../media/imagenes/logo_proyecto.png"
+          alt="The Marvelus World Islas"
+          class="logotipo-header"
+        />
+        <button class="boton-menu-header" id="toggle-menu">&#9776;</button>
+        <ul class="lista_navegador-header" id="lista-navegacion">
+          <li>
+            <a href="../index.html" class="enlace-header">Inicio</a>
+          </li>
+          <li>
+            <a href="sobre_nosotros.html" class="enlace-header"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li>
+            <a href="cosas-para-hacer.html" class="enlace-header"
+              >Cosas para Hacer</a
+            >
+          </li>
+          <li>
+            <a href="sobre_nosotros.html" class="enlace-header"
+              >Ofertas y Paquetes</a
+            >
+          </li>
+          <li><a href="creditos.html" class="enlace-header">Creditos</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="enlace-header button-header">Zarpar Ahora</a>
+    </header>
+
+    <section class="oferta__encabezado">
+      <h1 class="oferta__titulo-principal">Nuestras Ofertas de Entradas</h1>
+      <p class="oferta__descripcion" style="color: #2e3a59">
+        Explora nuestras increíbles opciones para vivir el festival al máximo.
+        Desde pases de un día hasta experiencias VIP, encuentra el ticket ideal
+        para ti y disfruta de música, cultura y diversión sin límites.
+      </p>
+    </section>
+    <main class="oferta">
+      <section class="oferta__fila">
+        <div class="oferta__tarjeta oferta__tarjeta--izquierda">
+          <div class="oferta__etiqueta">EXPERIENCIA ESTELAR</div>
+          <h2 class="oferta__titulo">Lago de Medusas & Rock Islands</h2>
+          <p class="oferta__precio">$1.688.524</p>
+          <p class="oferta__dias">1 día</p>
+          <p class="oferta__detalle">+ permisos $120</p>
+          <button class="oferta__boton" onclick="toggleDetalles(this)">
+            BUY NOW <span class="oferta__toggle-icon">+</span>
+          </button>
+
+          <div class="oferta__detalles">
+            <p class="oferta__descripcion">
+              Sumérgete en las aguas cristalinas de Marvelus y explora el
+              místico Lago de las Medusas, navega entre las impresionantes Rock
+              Islands y descubre playas escondidas rodeadas de exuberante
+              vegetación. Una aventura única e inolvidable para amantes de la
+              naturaleza.
+            </p>
+            <div class="oferta__accordion">
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué está incluido <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Equipo de snorkel completo, agua embotellada ilimitada,
+                  almuerzo típico local en la isla, guía bilingüe (inglés y
+                  español), transporte en lancha rápida y chaleco salvavidas.
+                </div>
+              </div>
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué esperar <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Nado entre medusas no urticantes, navegación entre formaciones
+                  rocosas milenarias, tiempo libre en playas vírgenes, y vistas
+                  espectaculares dignas de fotografía profesional.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oferta__tarjeta oferta__tarjeta--centro">
+          <div class="oferta__etiqueta">MULTI DÍA PRO</div>
+          <h2 class="oferta__titulo">Tour de Buceo + Jellyfish Lake</h2>
+          <p class="oferta__precio">$5.065.573</p>
+          <p class="oferta__dias">3 días</p>
+          <p class="oferta__detalle">+ permisos $160</p>
+          <button class="oferta__boton" onclick="toggleDetalles(this)">
+            BUY NOW <span class="oferta__toggle-icon">+</span>
+          </button>
+          <div class="oferta__detalles">
+            <p class="oferta__descripcion">
+              Vive una experiencia de buceo intensiva durante 3 días en los
+              arrecifes más espectaculares del Pacífico, combinando inmersiones
+              diarias con visitas guiadas al Lago de las Medusas y zonas
+              protegidas. Ideal para buzos certificados que buscan aventuras
+              profundas.
+            </p>
+            <div class="oferta__accordion">
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué está incluido <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  2 tanques por día, Nitrox 32% (para buzos certificados), guía
+                  de buceo certificado, traslados diarios, almuerzos frescos a
+                  bordo, refrigerios y botiquín de primeros auxilios.
+                </div>
+              </div>
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué esperar <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Inmersiones en pecios históricos, exploración de cuevas
+                  submarinas, encuentros con tortugas y tiburones de arrecife, y
+                  paseos opcionales por la costa en la tarde.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oferta__tarjeta oferta__tarjeta--derecha">
+          <div class="oferta__etiqueta">AVENTURA TOTAL</div>
+          <h2 class="oferta__titulo">Big Island Cultural Tour</h2>
+          <p class="oferta__precio">$1.688.524</p>
+          <p class="oferta__dias">1 día</p>
+          <p class="oferta__detalle">+ tasas no incluidas</p>
+          <button class="oferta__boton" onclick="toggleDetalles(this)">
+            BUY NOW <span class="oferta__toggle-icon">+</span>
+          </button>
+          <div class="oferta__detalles">
+            <p class="oferta__descripcion">
+              Este tour es perfecto para quienes desean empaparse de la historia
+              y la cultura de Marvelus. Visitarás monumentos históricos,
+              mercados tradicionales, cascadas escondidas y ruinas de la Segunda
+              Guerra Mundial, todo guiado por expertos locales.
+            </p>
+            <div class="oferta__accordion">
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué está incluido <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Recogida y regreso al hotel, agua embotellada durante todo el
+                  recorrido, guía profesional con conocimientos históricos,
+                  almuerzo típico y acceso a sitios culturales seleccionados.
+                </div>
+              </div>
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué esperar <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Caminatas por senderos naturales, visitas a pueblos nativos,
+                  narraciones históricas, experiencias fotográficas inolvidables
+                  y conexión con la esencia local de la isla.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="oferta__fila oferta__fila--invertida">
+        <div class="oferta__tarjeta oferta__tarjeta--derecha">
+          <div class="oferta__etiqueta">EXPLORA KOROR</div>
+          <h2 class="oferta__titulo">City Tour + Museos</h2>
+          <p class="oferta__precio">$422.131</p>
+          <p class="oferta__dias">4 horas</p>
+          <p class="oferta__detalle">+ entradas $30</p>
+          <button class="oferta__boton" onclick="toggleDetalles(this)">
+            BUY NOW <span class="oferta__toggle-icon">+</span>
+          </button>
+          <div class="oferta__detalles">
+            <p class="oferta__descripcion">
+              Una visita guiada por la ciudad de Koror, ideal para quienes
+              buscan una experiencia ligera pero enriquecedora. Incluye museos,
+              centros de arte y tiempo libre para compras en mercados locales.
+            </p>
+            <div class="oferta__accordion">
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué está incluido <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Entrada al Belau Museum, Etpison Museum y Palau Aquarium, guía
+                  turístico local, transporte climatizado y tiempo libre para
+                  compras en WCTC Shopping Center.
+                </div>
+              </div>
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué esperar <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Recorrido cultural relajado, historias fascinantes de la
+                  región, oportunidades para adquirir artesanías y fotografías
+                  memorables con fondos urbanos y marinos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oferta__tarjeta oferta__tarjeta--centro">
+          <div class="oferta__etiqueta">NATURALEZA PURA</div>
+          <h2 class="oferta__titulo">Cueva de los Susurros</h2>
+          <p class="oferta__precio">$780.000</p>
+          <p class="oferta__dias">Medio día</p>
+          <p class="oferta__detalle">+ guía privado</p>
+          <button class="oferta__boton" onclick="toggleDetalles(this)">
+            BUY NOW <span class="oferta__toggle-icon">+</span>
+          </button>
+          <div class="oferta__detalles">
+            <p class="oferta__descripcion">
+              Embárcate en una aventura hacia una cueva oculta donde el viento
+              produce sonidos únicos entre las rocas. Un recorrido místico por
+              un lugar poco conocido pero increíblemente mágico.
+            </p>
+            <div class="oferta__accordion">
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué está incluido <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Entrada privada, guía local experto, seguro de aventura,
+                  equipo de senderismo, snacks naturales, agua purificada y
+                  pausas para fotografías y descanso.
+                </div>
+              </div>
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué esperar <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Senderos ocultos, formaciones rocosas sorprendentes, sonido
+                  natural tipo eco, contacto íntimo con la naturaleza y un
+                  entorno relajante lejos del bullicio.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oferta__tarjeta oferta__tarjeta--izquierda">
+          <div class="oferta__etiqueta">ESENCIA DE MARVELUS</div>
+          <h2 class="oferta__titulo">Playa del Coral Encantado</h2>
+          <p class="oferta__precio">$950.000</p>
+          <p class="oferta__dias">1 día</p>
+          <p class="oferta__detalle">+ bebidas ilimitadas</p>
+          <button class="oferta__boton" onclick="toggleDetalles(this)">
+            BUY NOW <span class="oferta__toggle-icon">+</span>
+          </button>
+          <div class="oferta__detalles">
+            <p class="oferta__descripcion">
+              Disfruta de un día de descanso total en la playa más famosa de
+              Marvelus. Arena blanca, aguas turquesas y un entorno sereno con
+              todas las comodidades incluidas. Ideal para parejas y familias.
+            </p>
+            <div class="oferta__accordion">
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué está incluido <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Bebidas y frutas ilimitadas, camastro con sombrilla
+                  reservados, servicio de toallas, snorkel libre, animación
+                  suave, música ambiental y seguridad en la playa.
+                </div>
+              </div>
+              <div class="oferta__item">
+                <div class="oferta__item-header" onclick="toggleItem(this)">
+                  Qué esperar <span class="oferta__icon">▼</span>
+                </div>
+                <div class="oferta__item-body">
+                  Relajación total, nado en aguas tranquilas, exploración de
+                  corales cercanos, ambiente familiar, tiempo libre para tomar
+                  el sol o leer, y servicio premium durante todo el día.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-main">
+      <section class="footer-contenido">
+        <article class="footer-logo">
+          <img
+            src="../media/imagenes/logo_proyecto.png"
+            alt="Logo de The Marvelus Isles"
+          />
+        </article>
+        <nav class="footer-enlaces" aria-label="Enlaces del sitio">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Islas Favoritas</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+          </ul>
+        </nav>
+        <address class="footer-contacto">
+          <h4>Contacto</h4>
+          <p>📍 Isla Coral, Marvelus</p>
+          <p>📞 +57 301 000 0000</p>
+          <p>
+            ✉️
+            <a href="mailto:contacto@marvelusisles.com"
+              >contacto@marvelusisles.com</a
+            >
+          </p>
+        </address>
+      </section>
+    </footer>
+    <script src="../js/index.js"></script>
+
+    <script>
+      function toggleDetalles(button) {
+        const detalles = button.nextElementSibling;
+        const icon = button.querySelector(".oferta__toggle-icon");
+        const isVisible = detalles.style.display === "block";
+
+        detalles.style.display = isVisible ? "none" : "block";
+        icon.textContent = isVisible ? "+" : "−";
+      }
+      function toggleItem(header) {
+        const body = header.nextElementSibling;
+        const icon = header.querySelector(".oferta__icon");
+        const isOpen = body.style.display === "block";
+        body.style.display = isOpen ? "none" : "block";
+        icon.textContent = isOpen ? "▼" : "▲";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+:root {
+  --color-principal: #00b8d4;
+  --color-secundario: #ff6f61;
+  --color-fondo-claro: #faf9f6;
+  --color-fondo-oscuro: #102a43;
+  --color-detalle: #4caf50;
+  --color-texto-principal: #2e3a59;
+
+  --fuente-principal: "Poppins", sans-serif;
+}
+
+.pagina-hospedaje {
+  padding: 2rem 1rem;
+  background-color: var(--color-fondo-claro);
+  text-align: center;
+}
+
+.introduccion-hospedaje .titulo-seccion {
+  font-size: 2.5rem;
+  color: var(--color-principal);
+}
+
+.descripcion-seccion {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: var(--color-texto-principal);
+}
+
+.contenedor-cards-hospedaje {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-hospedaje {
+  background-color: white;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card-hospedaje:hover {
+  transform: translateY(-5px);
+}
+
+.img-hospedaje {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.titulo-card-hospedaje {
+  font-size: 1.2rem;
+  color: var(--color-principal);
+  margin-bottom: 0.5rem;
+}
+
+.llamado-reserva {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  background-color: var(--color-secundario);
+  color: white;
+  border-radius: 10px;
+}
+
+.llamado-reserva h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.boton-principal {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+  background-color: var(--color-principal);
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.boton-principal:hover {
+  background-color: var(--color-texto-principal);
+}
