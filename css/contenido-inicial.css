@@ -94,7 +94,7 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-  width: calc(25% - 20px); /* 4 en fila con gap */
+  width: calc(25% - 20px);
   min-width: 260px;
   max-width: 300px;
   display: flex;
@@ -144,6 +144,10 @@
 
   .oferta_descripcion-main {
     padding: 1rem;
+  }
+
+  .order-1 {
+    order: 1 !important;
   }
 
   .oferta_subtitulo {

@@ -1,0 +1,224 @@
+/* ==== VARIABLES GENERALES ==== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+:root {
+  --color-principal: #00b8d4;
+  --color-secundario: #ff6f61;
+  --color-fondo-claro: #faf9f6;
+  --color-fondo-oscuro: #102a43;
+  --color-detalle: #4caf50;
+  --color-texto-principal: #2e3a59;
+
+  --fuente-principal: "Poppins", sans-serif;
+}
+
+/* ==== ESTILOS DE LOGIN ==== */
+.login-container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  padding: 3rem 2.5rem;
+  width: 100%;
+  max-width: 450px;
+  margin: 2rem;
+  border: 1px solid rgba(0, 184, 212, 0.1);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.login-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--color-texto-principal);
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  color: #7a7a7a;
+  font-size: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--color-texto-principal);
+  font-size: 0.95rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fafbfc;
+}
+
+.input-field:focus {
+  border-color: var(--color-principal);
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(0, 184, 212, 0.1);
+}
+
+.input-field::placeholder {
+  color: #9ca3af;
+}
+
+.login-button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-principal),
+    var(--color-detalle)
+  );
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.login-button:hover {
+  background: linear-gradient(
+    135deg,
+    var(--color-detalle),
+    var(--color-principal)
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 184, 212, 0.3);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+.login-extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #e1e5e9;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: var(--color-principal);
+  border-color: var(--color-principal);
+}
+
+.forgot-password {
+  color: var(--color-principal);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-divider {
+  margin: 2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.login-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e1e5e9;
+}
+
+.login-divider span {
+  background: white;
+  padding: 0 1rem;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #7a7a7a;
+}
+
+.register-link a {
+  color: var(--color-principal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .login-container {
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-enlaces,
+  .footer-contacto {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .login-extras {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
