@@ -124,6 +124,10 @@
   color: var(--color-texto-principal);
 }
 
+.no-display {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .oferta_especial-contenedor {
     flex-direction: column;
@@ -136,6 +140,19 @@
     height: auto;
     max-height: 250px;
     object-fit: cover;
+  }
+
+  .introduccion-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .no-display {
+    display: flex !important;
+  }
+
+  .no-display:hover {
+    background-color: var(--color-secundario) !important;
   }
 
   .order-2 {
